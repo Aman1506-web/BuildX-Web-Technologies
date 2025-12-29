@@ -18,8 +18,10 @@ import { IconStarFilled } from "@tabler/icons-react";
 
 import GuaranteesSection from "@/components/demos/GuaranteeSection";
 import LetsMakeThingsHappenSection from "@/components/demos/LetsMakeThingHappen";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
+
   const services = [
     {
       icon: "/images/s_6.png",
@@ -59,90 +61,17 @@ export default function Home() {
     },
   ];
 
+  
+
+
   return (
     <div className="overflow-clip inset-0 -z-10 h-full w-full bg-[#fafafa] bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-size-[14px_24px]">
-      <Element
-        name="top"
-        className="overflow-hidden rounded-[6px] top-5 sticky md:mx-auto z-50 
-   xl:w-4/5 2xl:w-[68%] bg-white flex items-center 
-   justify-between py-3 md:py-6 px-3 md:px-8 mx-3 md:mx-6 shadow-md"
-      >
-        <Link href={"/"}>
-          <Image
-            src={"/logo/BXLogo.png"}
-            alt="Logo"
-            width={1000}
-            height={1000}
-            className="
-    w-20 md:w-28
-    scale-125 md:scale-150
-    -my-1 md:-my-2
-    origin-left
-  "
-          />
-        </Link>
-
-        <div className="absolute right-1/2 translate-x-1/2 transform">
-          <div className="hidden md:flex gap-x-10 items-center text-gray-700 font-medium text-lg cursor-pointer">
-            <Link href={"/showcase"} className="hover:text-blue-500">
-              Showcase
-            </Link>
-
-            <ScrollLink
-              to="services"
-              smooth={true}
-              className="hover:text-blue-500"
-            >
-              Services
-            </ScrollLink>
-
-            <ScrollLink
-              to="process"
-              smooth={true}
-              className="hover:text-blue-500"
-            >
-              Process
-            </ScrollLink>
-
-            <ScrollLink
-              to="guarentees"
-              smooth={true}
-              className="hover:text-blue-500"
-            >
-              Guarentees
-            </ScrollLink>
-
-            <a href="tel:919654248879" className="hidden lg:flex">
-              <button className="px-4 py-2 rounded-md flex items-center gap-x-3 hover:text-blue-500 cursor-pointer">
-                (+91)-9654248879
-              </button>
-            </a>
-          </div>
-        </div>
-
-        <div className="flex items-center gap-x-4">
-          <Link
-            href={"/meeting"}
-            className="
-  py-2 px-4 text-sm md:py-3 md:px-6 md:text-lg
-  hover:bg-[#abcbff]
-  rounded-md
-  border-2
-  border-black
-  text-white
-  bg-[#121212]
-  transition
-  duration-200
-     hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)] "
-          >
-            Book a call
-          </Link>
-        </div>
-      </Element>
+      {/* Navbar */}
+      <Navbar/>
 
       <main className="md:pb-10">
         <div className="md:px-0 mx-6 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-14">
-          <AnimatedShinyTextDemo />
+          {/* <AnimatedShinyTextDemo /> */}
 
           <h1>
             <CoverDemo />
@@ -152,52 +81,47 @@ export default function Home() {
             className="md:text-center
            text-xl md:text-2xl my-6 md:my-10 md:w-4/5 mx-auto text-gray-500"
           >
-            Schedule a call with us to discuss your project and get a quote in
-            minutes
+           We design and build websites that convert. Book a call to discuss your project.
           </p>
-          <div
-            className="
-                 flex 
-                  md:justify-center 
-                  items-center 
-                  gap-x-4
-                   "
+          {/* CTA Buttons - Colorful Design */}
+        <div className="flex md:justify-center items-center gap-x-4 relative z-10">
+          <Link
+            href="/meeting"
+            className="py-3 px-10 md:px-16 md:text-xl font-semibold
+              hover:bg-blue-700
+              rounded-[6px]
+              border 
+              whitespace-nowrap
+              border-black 
+              bg-blue-500 
+              text-white 
+              transition 
+              duration-200 
+              shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)]"
           >
-            <Link
-              href="/meeting"
-              className="py-3 
-            px-10
-            md:px-16
-      md:text-xl
-      hover:bg-[#abcbff] 
-      rounded-[6px]
-      border-2 
-      border-black 
-      dark:border-white 
-       bg-[#121212] 
-       text-white 
-       transition 
-       duration-200 
-       hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)] "
-            >
-              Book a Call
-            </Link>
-            <Link
-              href={"/showcase"}
-              className="
-              bg-white
-   py-3 
-   px-10
-   md:px-16
-      md:text-xl
-        border-4
-        border-black
-        rounded-[6px]
-        hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)]"
-            >
-              Showcase
-            </Link>
-          </div>
+            Book Call
+          </Link>
+          
+          <Link
+            href="/showcase"
+            className="bg-yellow-400
+              py-3 
+              px-10
+              md:px-16
+              md:text-xl
+              font-semibold
+              text-black
+              border
+              border-black
+              rounded-[6px]
+              hover:bg-yellow-500
+              transition
+              duration-200
+              shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)]"
+          >
+            Projects
+          </Link>
+        </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 items-center text-left md:justify-items-center md:mx-auto mt-10 md:mt-16">
             {/* Design */}
