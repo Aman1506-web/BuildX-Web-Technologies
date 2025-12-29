@@ -4,6 +4,7 @@ import LetsMakeThingsHappenSection from "@/components/demos/LetsMakeThingHappen"
 import Image from "next/image";
 import Link from "next/link";
 import { BlurFade } from "@/components/ui/blur-fade";
+import Navbar from "@/components/Navbar";
 
 const Showcase = () => {
   return (
@@ -15,7 +16,7 @@ const Showcase = () => {
   bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)]
    bg-[size:14px_24px]"
     >
-      <ShowcaseNavbar />
+      <Navbar />
       <section className="md:px-0 mx-6 xl:w-4/5 2xl:w-[68%] md:mx-auto">
         <div className="flex items-center justify-center relative pt-20">
   <BlurFade inView delay={0.15}>
