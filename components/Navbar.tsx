@@ -44,7 +44,7 @@ const Navbar: React.FC = () => {
   return (
     <Element
       name="top"
-      className="overflow-visible rounded-[6px] top-5 border-2 border-black sticky md:mx-auto z-50 
+      className="overflow-visible rounded-[6px] top-5  sticky md:mx-auto z-50 
         xl:w-4/5 2xl:w-[68%] bg-white 
         grid grid-cols-3 items-center
         py-2 md:py-4 px-3 md:px-8 mx-3 md:mx-6 shadow-lg md:shadow-xl"
@@ -59,13 +59,13 @@ const Navbar: React.FC = () => {
       </button>
 
       {/* Logo - Left on Desktop, Center on Mobile */}
-      <Link href="/" className="md:justify-left justify-self-start -translate-x-2 md:translate-x-0 md:ml-4">
+      <Link href="/" className="md:justify-left justify-self-start translate-x-0.5 md:translate-x-0 md:ml-4">
         <Image
-          src="/logo/BXLogo.png"
+          src="/logo/quiotech-logo.png"
           alt="Logo"
           width={1000}
           height={1000}
-          className="w-20 md:w-24 scale-135 md:scale-150 -my-1 md:-my-2"
+          className="w-20 md:w-24 scale-130 md:scale-150 -my-1 md:-my-2"
         />
       </Link>
 
@@ -134,9 +134,9 @@ const Navbar: React.FC = () => {
           <button
             onClick={() => setIsCallMenuOpen(!isCallMenuOpen)}
             className="py-2.5 px-5 text-base
-              hover:bg-green-700 rounded-md border border-black text-white
+              hover:bg-green-700 rounded-md border  text-white
               bg-green-600 transition duration-200 whitespace-nowrap flex items-center gap-2
-              shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)]"
+              "
           >
             <Phone size={18} />
             Call Now
@@ -174,9 +174,9 @@ const Navbar: React.FC = () => {
         <Link
           href="/meeting"
           className="md:py-2.5 md:px-5 md:text-base py-2 px-4 text-sm
-            hover:bg-blue-700 rounded-md border border-black text-white
+            hover:bg-blue-700 rounded-md text-white
             bg-blue-500 transition duration-200 whitespace-nowrap
-            shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)]"
+            "
         >
           Book a call
         </Link>

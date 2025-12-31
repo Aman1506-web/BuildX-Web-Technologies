@@ -9,15 +9,15 @@ export function ScrollBasedVelocityDemo() {
       <ScrollVelocityContainer className="text-4xl font-bold tracking-[-0.02em] md:text-7xl md:leading-[1.1]">
         <ScrollVelocityRow baseVelocity={20} direction={1}>
           <div className="flex items-center gap-4">
-            <span className="text-blue-500">&nbsp;BuildX</span>
-            <span className="text-black dark:text-white">Web Technologies</span>
+            <span className="text-blue-500">&nbsp;Quiotech</span>
+            <span className="text-black dark:text-white">Technologies</span>
           </div>
         </ScrollVelocityRow>
 
         <ScrollVelocityRow baseVelocity={20} direction={-1}>
           <div className="flex items-center gap-4">
-            <span className="text-blue-500">&nbsp;BuildX</span>
-            <span className="text-black dark:text-white">Web Technologies</span>
+            <span className="text-blue-500">&nbsp;Quiotech</span>
+            <span className="text-black dark:text-white">Technologies</span>
           </div>
         </ScrollVelocityRow>
       </ScrollVelocityContainer>

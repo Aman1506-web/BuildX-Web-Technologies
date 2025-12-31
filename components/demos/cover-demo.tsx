@@ -3,19 +3,7 @@ import { Cover } from "@/components/ui/cover";
 
 export function CoverDemo() {
   return (
-    <section className="relative flex flex-col items-center px-4 pt-3 md:pt-20">
-
-      {/* 🔹 Image added ABOVE heading */}
-      <div className="mb-6 md:mb-20">
-        <Image
-          src="/illustrations/design-build-grow.png"
-          alt="Design Build Grow"
-          width={320}
-          height={120}
-          priority
-          className="h-16 sm:h-20 md:h-24 scale-120 md:scale-190 w-auto object-contain"
-        />
-      </div>
+    <section className="relative flex flex-col items-center px-4 pt-1 md:pt-1">
 
       {/* 🔹 Heading (unchanged) */}
       <h1
