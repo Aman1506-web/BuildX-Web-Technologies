@@ -1,20 +1,21 @@
 "use client";
 
 import Image from "next/image";
-import { Link as ScrollLink, Element } from "react-scroll";
+import {  Element } from "react-scroll";
 import Link from "next/link";
-import { AnimatedShinyTextDemo } from "@/components/demos/animated-shiny-text-demo";
-import { CoverDemo } from "@/components/demos/cover-demo";
-import { PiCheckBold } from "react-icons/pi";
-import { TypeAnimation } from "react-type-animation";
-import { NumberTicker } from "@/components/ui/number-ticker";
-import { InfiniteMovingLogos } from "@/components/ui/infinite-moving-logo";
+// import { AnimatedShinyTextDemo } from "@/components/demos/animated-shiny-text-demo";
+// import { CoverDemo } from "@/components/demos/cover-demo";
+// import { PiCheckBold } from "react-icons/pi";
+// import { TypeAnimation } from "react-type-animation";
+// import { NumberTicker } from "@/components/ui/number-ticker";
+// import { InfiniteMovingLogos } from "@/components/ui/infinite-moving-logo";
 import { TextGenerateEffectDemo } from "@/components/demos/text-generate-effect-demo";
 import { ShineBorder } from "@/components/ui/shine-border";
 import { ScrollBasedVelocityDemo } from "@/components/demos/scroll-based-velocity-demo";
 import TypeOnScroll from "@/components/demos/TypeOnScrollDemo";
 import { AnimatedBeamMultipleOutputDemo } from "@/components/demos/animated-beam-demo";
 import { IconStarFilled } from "@tabler/icons-react";
+import HeroSection from "@/components/HeroSection";
 
 import GuaranteesSection from "@/components/demos/GuaranteeSection";
 import LetsMakeThingsHappenSection from "@/components/demos/LetsMakeThingHappen";
@@ -70,143 +71,7 @@ export default function Home() {
       <Navbar/>
 
       <main className="md:pb-10">
-        <div className="md:px-0 mx-6 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-14">
-          {/* <AnimatedShinyTextDemo /> */}
-
-          <h1>
-            <CoverDemo />
-          </h1>
-
-          <p
-            className="md:text-center
-           text-xl md:text-2xl my-6 md:my-10 md:w-4/5 mx-auto text-gray-500"
-          >
-           We design and build websites that convert. Book a call to discuss your project.
-          </p>
-          {/* CTA Buttons - Colorful Design */}
-        <div className="flex md:justify-center items-center gap-x-4 relative z-10">
-          <Link
-            href="/meeting"
-            className="py-3 px-10 md:px-16 md:text-xl font-semibold
-              hover:bg-blue-700
-              rounded-[6px]
-              border 
-              whitespace-nowrap
-              border-black 
-              bg-blue-500 
-              text-white 
-              transition 
-              duration-200 
-              shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)]"
-          >
-            Book Call
-          </Link>
-          
-          <Link
-            href="/showcase"
-            className="bg-yellow-400
-              py-3 
-              px-10
-              md:px-16
-              md:text-xl
-              font-semibold
-              text-black
-              border
-              border-black
-              rounded-[6px]
-              hover:bg-yellow-500
-              transition
-              duration-200
-              shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)]"
-          >
-            Projects
-          </Link>
-        </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 items-center text-left md:justify-items-center md:mx-auto mt-10 md:mt-16">
-            {/* Design */}
-            <p className="md:text-xl font-semibold flex gap-x-4 items-center">
-              <PiCheckBold className="text-xl text-blue-500" />
-              <TypeAnimation sequence={["Design"]} speed={60} cursor={false} />
-            </p>
-
-            {/* Development */}
-            <p className="md:text-xl font-semibold flex gap-x-4 items-center">
-              <PiCheckBold className="text-xl text-blue-500" />
-              <TypeAnimation
-                sequence={["Development"]}
-                speed={60}
-                cursor={false}
-              />
-            </p>
-
-            {/* Marketing */}
-            <p className="md:text-xl font-semibold flex gap-x-4 items-center">
-              <PiCheckBold className="text-xl text-blue-500" />
-              <TypeAnimation
-                sequence={["Marketing"]}
-                speed={60}
-                cursor={false}
-              />
-            </p>
-
-            {/* Strategy */}
-            <p className="md:text-xl font-semibold flex gap-x-4 items-center">
-              <PiCheckBold className="text-xl text-blue-500" />
-              <TypeAnimation
-                sequence={["Strategy"]}
-                speed={60}
-                cursor={false}
-              />
-            </p>
-          </div>
-
-          <div className="md:flex items-center justify-between gap-y-4 my-10 gap-x-28 mx-auto">
-            <div className="md:w-2/5">
-              <h1 className="text-2xl font-medium text-gray-600 w-4/5">
-                Trusted by fast moving brands worldwide
-              </h1>
-
-              <div className="flex my-6 gap-x-5 w-full">
-                <div>
-                  <h1 className="text-blue-500 text-3xl md:text-5xl">
-                    <NumberTicker value={1000} className="text-blue-500" /> +
-                    <p className="text-gray-500 text-sm md:text-md">
-                      Happy Clients
-                    </p>
-                  </h1>
-                </div>
-
-                <div className="w-px bg-gray-300 self-stretch"></div>
-
-                <div className="flex-1 min-w-0">
-                  <h1 className="text-blue-500 text-3xl md:text-5xl whitespace-nowrap overflow-hidden">
-                    <NumberTicker value={100} className="text-blue-500" /> +
-                    <p className="text-gray-500 text-sm md:text-md">
-                      Projects Completed
-                    </p>
-                  </h1>
-                </div>
-              </div>
-            </div>
-            <section className="overflow-hidden mt-10 md:w-4/5">
-              <InfiniteMovingLogos
-                speed="fast"
-                direction="left"
-                items={[
-                  {
-                    logo: "/logo/BXLogo.png",
-                    name: "Logo1",
-                  },
-                  {
-                    logo: "/logo/BreatheX_logo.png",
-                    name: "Logo2",
-                  },
-                ]}
-              />
-            </section>
-          </div>
-        </div>
+        <HeroSection/>
       </main>
 
       <Element name="services">
@@ -338,7 +203,7 @@ export default function Home() {
       <section>
         <main className="md:flex items-center justify-center space-y-6 md:space-y-0 md:gap-x-20 xl:w-4/5 2xl:w-[68%] mx-auto px-6 md:px-0">
           <Image
-            src={"/logo/BXLogo.png"}
+            src={"/logo/quiotech-logo.png"}
             width={10000}
             height={10000}
             className=" md:w-1/3 rounded-md"
@@ -379,7 +244,7 @@ export default function Home() {
         <div className="flex flex-col  justify-between gap-y-3 xl:w-4/5 2xl:w-[68%] mx-auto">
           <h1 className="text-3xl md:text-5xl font-medium ">
             <Image
-              src={"/logo/BXLogo.png"}
+              src={"/logo/quiotech-logo.png"}
               width={10000}
               height={10000}
               className="w-40"
@@ -393,7 +258,7 @@ export default function Home() {
         </div>
 
         <div className="flex md:justify-center gap-x-4 mt-10">
-          © 2025 BuildX Web Technologies. All Rights Reserved.
+          © 2025 Quiotech Technologies. All Rights Reserved.
           <Link href="/" className="text-blue-500">
             Privacy Policy
           </Link>

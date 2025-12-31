@@ -9,8 +9,8 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "BuildX | Web Technology Solutions",
-  description: "BuildX - Crafting Cutting-Edge Web Solutions for Your Business",
+  title: "Quiotech | Web Technology Solutions",
+  description: "Quiotech - Crafting Cutting-Edge Web Solutions for Your Business",
 };
 
 export default function RootLayout({
