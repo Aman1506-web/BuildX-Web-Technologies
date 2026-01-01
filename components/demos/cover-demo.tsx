@@ -8,7 +8,7 @@ export function CoverDemo() {
       {/* 🔹 Heading (unchanged) */}
       <h1
         className="
-          text-4xl sm:text-5xl md:text-7xl
+          text-3xl sm:text-4xl md:text-6xl
           leading-tight md:leading-[1.1]
           font-semibold
           max-w-6xl

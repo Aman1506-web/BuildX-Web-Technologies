@@ -57,18 +57,18 @@ export default function HeroSection({
     { value: 100, label: "Projects Completed" },
   ],
   logos = [
-    { logo: "/logo/BXLogo.png", name: "Logo1" },
+    { logo: "/logo/quiotech-logo.png", name: "Logo1" },
     { logo: "/logo/BreatheX_logo.png", name: "Logo2" },
   ],
   trustedByText = "Trusted by fast moving brands worldwide",
 }: HeroSectionProps) {
   return (
-    <section className="w-full px-4 sm:px-6 md:px-8 lg:px-0 mx-auto max-w-7xl pt-8 md:pt-14 pb-10 md:pb-16">
+    <section className="w-full px-4 sm:px-6 md:px-8 lg:px-0 mx-auto max-w-7xl pt-10 md:pt-14 pb-10 md:pb-16">
       <div className="flex flex-col items-center justify-center space-y-6 md:space-y-10">
         
         {/* Hero Illustration Image - Single Image */}
-        <div className="w-full max-w-4xl mx-auto px-4">
-          <div className="relative w-full h-28 sm:h-40 md:h-48 lg:h-56">
+        
+          <div className="relative w-full sm:w-4/5 md:w-3/4 lg:w-2/3 xl:max-w-4xl h-24 sm:h-32 md:h-40 lg:h-48 mx-auto px-2 sm:px-4">
             <Image
               src={heroImage}
               alt={heroImageAlt}
@@ -77,7 +77,7 @@ export default function HeroSection({
               priority
             />
           </div>
-        </div>
+        
 
         {/* Heading */}
         <div className="w-full mt-0 mb-4 md:mb-10 px-2">
@@ -87,7 +87,7 @@ export default function HeroSection({
         </div>
 
         {/* Description */}
-        <p className="text-center text-lg sm:text-xl md:text-2xl text-gray-500 max-w-4xl mx-auto px-4 md:px-0">
+        <p className="text-center text-base sm:text-lg md:text-xl text-gray-500 max-w-4xl mx-auto px-4 md:px-0">
           {description}
         </p>
 
@@ -95,7 +95,7 @@ export default function HeroSection({
         <div className="flex flex-row flex-wrap items-center justify-center gap-3 w-full sm:w-auto max-w-md">
           <Link
             href={primaryButtonLink}
-            className="flex-1 min-w-[140px] py-3 px-6 sm:px-10 md:px-16 text-base md:text-xl font-semibold
+            className="flex-1 min-w-35 py-2.5 px-6 sm:px-8 md:px-12 text-sm md:text-lg font-semibold
               text-center whitespace-nowrap
               rounded-[6px]
                
@@ -111,7 +111,7 @@ export default function HeroSection({
           
           <Link
             href={secondaryButtonLink}
-            className="flex-1 min-w-[140px] py-3 px-6 sm:px-10 md:px-16  md:text-xl font-medium text-base
+            className="flex-1 min-w-35 py-2.5 px-6 sm:px-8 md:px-12 text-sm md:text-lg font-medium
               text-center whitespace-nowrap
               rounded-[6px]
             
@@ -127,17 +127,17 @@ export default function HeroSection({
         </div>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 w-full max-w-4xl mx-auto px-4">
-          {features.map((feature, index) => (
-            <div
-              key={index}
-              className="flex items-center gap-2 md:gap-4 justify-start md:justify-center"
-            >
+       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 w-full max-w-4xl mx-auto px-4">
+  {features.map((feature, index) => (
+    <div
+      key={index}
+      className="flex items-center gap-1.5 md:gap-4 justify-center w-full"
+    >
               <PiCheckBold className="text-lg md:text-xl text-blue-500 flex-shrink-0" />
-              <p className="text-sm md:text-base lg:text-xl font-semibold">
+              <p className="text-sm md:text-base lg:text-xl font-semibold whitespace-nowrap">
                 <TypeAnimation
                   sequence={feature.sequence}
-                  speed={60}
+                  speed={5}
                   cursor={false}
                 />
               </p>
@@ -190,17 +190,4 @@ export default function HeroSection({
   );
 }
 
-// // Compact version without hero image for inner pages
-// export function HeroSectionCompact(props: Partial<HeroSectionProps>) {
-//   return (
-//     <HeroSection
-//       {...props}
-//       heroImage="" // No image
-//       features={props.features || [
-//         { text: "Design", sequence: ["Design"] },
-//         { text: "Development", sequence: ["Development"] },
-//       ]}
-//       stats={props.stats || [{ value: 1000, label: "Happy Clients" }]}
-//     />
-//   );
-// }
+

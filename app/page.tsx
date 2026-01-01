@@ -66,7 +66,7 @@ export default function Home() {
 
 
   return (
-    <div className="overflow-clip inset-0 -z-10 h-full w-full bg-[#fafafa] bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-size-[14px_24px]">
+   <div className="overflow-clip inset-0 -z-10 h-full w-full bg-[#fafafa] bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-size-[14px_24px]">
       {/* Navbar */}
       <Navbar/>
 
@@ -76,10 +76,10 @@ export default function Home() {
 
       <Element name="services">
         <div className="md:px-0 mx-6 xl:w-4/5 2xl:w-[68%] md:mx-auto ">
-          <h1 className="text-4xl md:text-6xl xl:text-7xl text-center">
+          <h1 className="text-3xl md:text-4xl xl:text-5xl text-center">
             <TextGenerateEffectDemo />
           </h1>
-          <p className="md:text-center py-4 md:w-1/2 mx-auto text-xl md:text-2xl text-gray-500">
+          <p className="md:text-center py-4 md:w-1/2 mx-auto text-lg md:text-xl text-gray-500">
             All of our services are designed to help your business stand out
           </p>
 
@@ -109,7 +109,7 @@ export default function Home() {
                   alt={service.title}
                 />
 
-                <h1 className="text-xl font-medium">{service.title}</h1>
+                <h1 className="text-lg font-medium">{service.title}</h1>
 
                 <p className="text-gray-500">{service.description}</p>
               </div>
@@ -124,7 +124,7 @@ export default function Home() {
 
       <Element name="process">
         <main className="md:px-0 mx-6 md:mx-auto">
-          <h1 className="text-3xl md:text-5xl md:text-center font-medium flex items-center gap-x-2 mx-auto justify-center">
+          <h1 className="text-3xl md:text-4xl md:text-center font-medium flex items-center gap-x-2 mx-auto justify-center">
             Our{" "}
             <span className="text-blue-500 flex gap-x-1 items-center">
               {" "}
@@ -150,7 +150,7 @@ export default function Home() {
           <p
             className="text-center 
           py-4 md:w-1/2 mx-auto 
-          text-xl md:text-2xl text-gray-500"
+          text-lg md:text-xl text-gray-500"
           >
             All of our services are designed to help your business to get
             noticed.
@@ -167,7 +167,7 @@ export default function Home() {
               <div className="ml-6 md:ml-10 pt-8 space-y-6">
                 <TypeOnScroll
                   text="1. Connect"
-                  className="lg:text-4xl text-3xl font-semibold"
+                  className="lg:text-3xl text-2xl font-semibold"
                 />
 
                 <TypeOnScroll
@@ -177,7 +177,7 @@ export default function Home() {
 
                 <TypeOnScroll
                   text="2. Collaborate"
-                  className="lg:text-4xl text-3xl font-semibold"
+                  className="lg:text-3xl text-2xl font-semibold"
                 />
 
                 <TypeOnScroll
@@ -187,7 +187,7 @@ export default function Home() {
 
                 <TypeOnScroll
                   text="3. Create"
-                  className="lg:text-4xl text-3xl font-semibold"
+                  className="lg:text-3xl text-2xl font-semibold"
                 />
 
                 <TypeOnScroll
@@ -210,7 +210,7 @@ export default function Home() {
             alt="image"
           />
           <div className="flex flex-col gap-y-5 md:w-1/2">
-            <h1 className="text-lg md:text-2xl ">
+            <h1 className="text-base md:text-xl ">
               &quot;We&apos;ve been working with Bird for over 2 years and
               they&apos;ve been amazing to work with. They&apos;ve helped us
               grow our business and we couldn&apos;t be happier with the
@@ -224,7 +224,7 @@ export default function Home() {
               <IconStarFilled className="text-4xl text-yellow-500" />
             </div>
 
-            <span className="text-xl font-medium">
+            <span className="text-lg font-medium">
               Jordan, Brisson <br />
               CEO, Atlas Massage
             </span>
@@ -242,7 +242,7 @@ export default function Home() {
 
       <footer className="bg-[#fafafa] py-10  px-6 md:px-0 md:mx-auto border-t">
         <div className="flex flex-col  justify-between gap-y-3 xl:w-4/5 2xl:w-[68%] mx-auto">
-          <h1 className="text-3xl md:text-5xl font-medium ">
+          <h1 className="text-2xl md:text-4xl font-medium ">
             <Image
               src={"/logo/quiotech-logo.png"}
               width={10000}
@@ -251,9 +251,9 @@ export default function Home() {
               alt="image"
             />{" "}
           </h1>
-          <p className="text-left  text-xl  text-gray-500">+91-9654248879</p>
-          <p className="text-left  text-xl  text-gray-500">
-           buildxwebtech739@gmail.com
+          <p className="text-left  text-lg  text-gray-500">+91-9654248879</p>
+          <p className="text-left  text-lg  text-gray-500">
+           quiotechh@gmail.com
           </p>
         </div>
 
