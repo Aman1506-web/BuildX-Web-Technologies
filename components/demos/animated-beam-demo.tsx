@@ -75,10 +75,10 @@ export function AnimatedBeamMultipleOutputDemo({
         <div className="flex flex-col justify-center">
           <Circle ref={div6Ref} className="size-16 bg-white">
           <Image
-          src={'/logo/BXLogo.png'}
+          src={'/logo/quiotech-logo.png'}
           height={1000}
           width={1000}
-          className="scale-160"
+          className="scale-180"
           alt="logo"
           />
           </Circle>

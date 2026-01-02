@@ -52,7 +52,6 @@ export const InfiniteMovingLogos = ({
     getDirection();
     getSpeed();
 
-    // ⚠️ allow DOM paint before animation
     requestAnimationFrame(() => {
       setStart(true);
     });
@@ -73,7 +72,7 @@ export const InfiniteMovingLogos = ({
       <ul
         ref={scrollerRef}
         className={cn(
-          "flex w-max gap-4 py-4 flex-nowrap",
+          "flex w-max gap-6 md:gap-8 py-4 flex-nowrap",
           start && "animate-scroll",
           pauseOnHover && "hover:paused"
         )}
@@ -81,15 +80,18 @@ export const InfiniteMovingLogos = ({
         {items.map((item) => (
           <li
             key={item.name}
-            className="flex items-center px-8 flex-shrink-0"
+            className="flex items-center justify-center shrink-0 h-16 md:h-20"
           >
-            <Image
-              src={item.logo}
-              alt={item.name}
-              width={400}
-              height={200}
-              className="w-40 md:w-60"
-            />
+            <div className="relative h-full w-auto flex items-center justify-center hover:scale-110 transition-all duration-300">
+              <Image
+                src={item.logo}
+                alt={item.name}
+                width={120}
+                height={56}
+                className="h-12 md:h-16 w-auto object-contain"
+                style={{ maxHeight: "64px" }}
+              />
+            </div>
           </li>
         ))}
       </ul>

@@ -6,39 +6,47 @@ import Link from "next/link";
 function LetsMakeThingsHappenSection() {
   return (
     <section className="
-     my-10 md:py-20  md:mx-auto
-    bg-accent rounded-[45px] p-12.5 md:p-15 relative">
-      <div className="md:pr-88">
-        <p className="text-3xl font-medium">
+     my-10 md:py-20 md:mx-auto
+    bg-accent rounded-[45px] p-6 md:p-15 relative overflow-hidden">
+      <div className="md:pr-88 relative z-10">
+        <p className="text-xl md:text-3xl font-medium">
           Let&apos;s make things happen
         </p>
 
-        <p className="my-10 text-xl">
+        <p className="my-6 md:my-10 text-sm md:text-lg">
           Contact us today to learn more about how our digital marketing
           services can help your business grow and succeed online.
         </p>
 
         <Link
           href="/meeting"
-          className="py-3 
-            px-10
-        
-            md:px-16
-      md:text-xl
-      hover:bg-[#abcbff] 
-      rounded-[6px]
-      border-2 
-      border-black 
-      dark:border-white 
-       bg-[#121212] 
-       text-white 
-       transition 
-       duration-200 
-       hover:shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)] "
+          className="inline-block py-2.5 px-8
+            md:py-3 md:px-16
+            text-base md:text-xl
+            hover:bg-blue-700
+            rounded-[6px] 
+            dark:border-white 
+            bg-blue-500 
+            text-white 
+            transition 
+            duration-200 
+        "
         >
           Book a Call
         </Link>
       </div>
+      
+      {/* Mobile image - bottom right, smaller */}
+      <div className="absolute -bottom-4 -right-4 md:hidden opacity-20">
+        <Image
+          src="/images/proposal_illustration.png"
+          alt="proposal illustration"
+          width={150}
+          height={150}
+        />
+      </div>
+      
+      {/* Desktop image - top right, larger */}
       <div className="absolute -top-8 right-8 hidden md:block">
         <Image
           src="/images/proposal_illustration.png"
