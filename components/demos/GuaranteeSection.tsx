@@ -93,7 +93,7 @@ export default function GuaranteesSection() {
         <div className="relative z-10 py-20 px-6">
           {/* Heading */}
           <h2 className="text-3xl md:text-5xl md:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium bg-gradient-to-b from-white to-neutral-400 bg-clip-text text-transparent">
-            Our guarantees to you.
+            Why clients trust <span className="text-white">Quiotech</span>
           </h2>
           <p className="mt-4 text-xl md:text-2xl text-neutral-300 text-center max-w-5xl mx-auto">
             We ensure the highest quality of work, with the fastest delivery times.
